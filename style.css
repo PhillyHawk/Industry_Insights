@@ -47,7 +47,7 @@ li {
   position: relative;
 }
 
-li a {
+a.nav-link {
   display: block;
   color: white;
   font-weight: 700;
@@ -143,6 +143,9 @@ h1 {
 .article-col:nth-child(even) {
   padding-left: 38px;
 }
+article-col col-xs-12 col-sm-6{
+  height: 561.2px;
+}
 .blog-archive-grid-section .article-col {
   margin-bottom: 45px;
   position: relative;
@@ -222,6 +225,11 @@ footer .left-content a{
 footer .left-content p {
   color: white;
   margin: 0;
+}
+footer .right-content {
+  float:right;
+  text-align: right;
+  padding-top: 15px;
 }
 footer .right-content ul.social-icons {
   list-style: none;
