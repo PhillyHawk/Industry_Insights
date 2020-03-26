@@ -13,7 +13,7 @@ header{
   z-index: 20;
   overflow: hidden;
   background-color: transparent;
-  position: fixed;
+  position: absolute;
   top: 0;
 }
 .container{
@@ -174,8 +174,19 @@ h1 {
   left: 5px;
   top: 50%;
   transform: translateY(-50%);
+} 
+.blog-archive-filter .filter-bar .filter-toggle-container .filter-toggle .button {
+  margin-left: 30px;
 }
-.blog-archive-filter
+.blog-archive-filter .filter-bar .filter-toggle-container .filter-toggle span {
+  display: inline-block;
+}
+span.button {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #353f41;
+  margin-top: 26px;
+}
 
 .blog-archive-grid-section {
   margin-top: 88px;
