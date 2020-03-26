@@ -4,9 +4,11 @@ body {
   background-color: white;
   color: black;
 }
-header{
+
+header {
   display: block;
 }
+
 .navigation {
   height: 124px;
   width: 100%;
@@ -16,22 +18,41 @@ header{
   position: absolute;
   top: 0;
 }
-.container{
+
+.container {
   margin-right: auto;
   margin-left: auto;
 }
-.container .row.relative{
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-right: 24px;
+    padding-left: 24px;
+    ;
+  }
+  .navigation .mobile-menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+}
+
+.container .row.relative {
   position: relative;
 }
-.col-xs-12{
+
+.col-xs-12 {
   width: 100%;
   float: left;
 }
-.navigation .logo{
+
+.navigation .logo {
   position: absolute;
   /* left: 0; */
   top: 45px;
 }
+
 .navigation .logo a {
   background-image: url(https://brain.do/wp-content/uploads/2019/06/braindo_logo_white.svg);
   background-repeat: no-repeat;
@@ -40,11 +61,19 @@ header{
   width: 79px;
   height: 36px;
 }
+
+.navigation .mobile-menu-toggle {
+  position: absolute;
+  top: 32px;
+  right: 0;
+}
+
 .navigation nav {
   position: absolute;
   top: 47px;
   right: 0;
 }
+
 .navigation a {
   text-decoration: none;
   font-weight: 600;
@@ -76,6 +105,7 @@ a.nav-link {
   font-size: 15px;
   text-transform: uppercase;
 }
+
 a.nav-link:hover {
   text-decoration: underline;
 }
@@ -138,6 +168,7 @@ h1 {
   font-size: 50px;
   color: white;
 }
+
 .page-wrapper {
   background: #fff;
   position: relative;
@@ -145,19 +176,23 @@ h1 {
   padding-top: 0.1px;
   padding-bottom: 0.1px
 }
+
 .sticky-wrapper {
   height: 40px;
-  width: 100% ;
+  width: 100%;
 }
+
 .blog-archive-filter {
   background: white;
   top: auto;
 }
+
 .blog-archive-filter .filter-bar {
   position: relative;
   height: 74px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
 }
+
 .blog-archive-filter .filter-bar .filter-toggle .horizontal-line {
   width: 13px;
   height: 2px;
@@ -166,6 +201,7 @@ h1 {
   top: 50%;
   transform: translateY(-50%);
 }
+
 .blog-archive-filter .filter-bar .filter-toggle .vertical-line {
   width: 2px;
   height: 13px;
@@ -174,13 +210,16 @@ h1 {
   left: 5px;
   top: 50%;
   transform: translateY(-50%);
-} 
+}
+
 .blog-archive-filter .filter-bar .filter-toggle-container .filter-toggle .button {
   margin-left: 30px;
 }
+
 .blog-archive-filter .filter-bar .filter-toggle-container .filter-toggle span {
   display: inline-block;
 }
+
 span.button {
   font-weight: 700;
   text-transform: uppercase;
@@ -191,25 +230,32 @@ span.button {
 .blog-archive-grid-section {
   margin-top: 88px;
 }
+
 .container {
   height: 100%;
 }
+
 .container .row {
   height: 100%;
 }
+
 .row {
   margin-right: -15px;
   margin-left: -15px;
 }
+
 .article-col:nth-child(odd) {
   padding-right: 38px;
 }
+
 .article-col:nth-child(even) {
   padding-left: 38px;
 }
-article-col col-xs-12 col-sm-6{
+
+article-col col-xs-12 col-sm-6 {
   height: 561.2px;
 }
+
 .blog-archive-grid-section .article-col {
   margin-bottom: 45px;
   position: relative;
@@ -221,36 +267,43 @@ article-col col-xs-12 col-sm-6{
   height: 354px;
   overflow: hidden;
 }
+
 .blog-archive-grid-section .article-col .image-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+
 .blog-archive-grid-section .article-col .image-container .bottom-border {
   height: 10px;
   width: 100%;
   position: absolute;
   bottom: 0;
 }
-.color-bar.red-yellow {  
+
+.color-bar.red-yellow {
   background: linear-gradient(94deg, #e0484d, #f5cf42);
 }
+
 .color-bar.green-blue {
   background: linear-gradient(94deg, #6FD164, #289bd8);
 }
-.blog-archive-grid-section .article-col .text-container .blog-date  {
+
+.blog-archive-grid-section .article-col .text-container .blog-date {
   display: inline-block;
   margin: 0 15px 0 0;
   font-weight: 400;
 }
+
 .blog-archive-grid-section .article-col .text-container h3 {
-margin: 0 0 10px 0;
-text-transform: uppercase;
-display: inline-block;
-color: #353f41;
-font-weight: 700;
-font-size: 18px;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #353f41;
+  font-weight: 700;
+  font-size: 18px;
 }
+
 .blog-archive-grid-section .article-col .text-container h2 {
   display: block;
   color: #353f41;
@@ -258,24 +311,27 @@ font-size: 18px;
   margin: 0 0 40px;
 }
 
-span{
+span {
   color: #4b5759;
   font-weight: 400;
 }
+
 .pagination-section {
   padding: 0 0 100px;
-  
 }
+
 .pagination-section ul {
   text-align: center;
   font-size: 16px;
   color: rgb(51, 51, 51);
 }
+
 .pagination-section ul li {
   display: inline-block;
   margin: 0 12px;
   width: 16px;
 }
+
 footer {
   z-index: 50;
   position: relative;
@@ -283,38 +339,54 @@ footer {
   background: linear-gradient(133deg, #6FD164 -38%, #289bd8 73%);
   display: block;
 }
+
+@media screen and (max-width 600px) {
+  footer {
+    padding-bottom: 10px;
+    background: linear-gradient(133deg, #6FD164 -41%, #289bd8);
+  }
+}
+
 footer .left-content a {
   display: block;
   margin: 0 0 20px;
 }
+
 footer .left-content p {
   color: white;
   margin: 0;
 }
+
 footer .right-content {
   float: right;
   text-align: right;
   padding-top: 15px;
   color: white;
 }
+
 footer .right-content ul.social-icons {
   list-style: none;
   text-align: center;
   margin-bottom: 20px;
 }
+
 footer .right-content ul.social-icon li {
   display: inline-block;
   width: 60px;
   font-weight: 900;
 }
+
 footer .right-content li a {
   display: block;
   color: white;
 }
+
 footer .right-content .legal-information ul li a {
   color: white;
   text-decoration: underline;
+  margin-bottom: 0;
 }
-p{
+
+p {
   margin: 0 0 10px;
 }
