@@ -281,6 +281,7 @@ footer {
   position: relative;
   padding: 30px 0 35px;
   background: linear-gradient(133deg, #6FD164 -38%, #289bd8 73%);
+  display: block;
 }
 footer .left-content a {
   display: block;
@@ -291,15 +292,29 @@ footer .left-content p {
   margin: 0;
 }
 footer .right-content {
-  float:right;
+  float: right;
   text-align: right;
   padding-top: 15px;
+  color: white;
 }
 footer .right-content ul.social-icons {
   list-style: none;
   text-align: center;
   margin-bottom: 20px;
 }
+footer .right-content ul.social-icon li {
+  display: inline-block;
+  width: 60px;
+  font-weight: 900;
+}
 footer .right-content li a {
   display: block;
+  color: white;
+}
+footer .right-content .legal-information ul li a {
+  color: white;
+  text-decoration: underline;
+}
+p{
+  margin: 0 0 10px;
 }
